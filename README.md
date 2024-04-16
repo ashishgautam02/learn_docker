@@ -1,7 +1,7 @@
-====== Docker references
+# Docker references
 
 
------- Building a NodeJS Docker file: 
+## Building a NodeJS Docker file: 
 
 ### File Content
 
@@ -10,10 +10,16 @@
 > WORKDIR /usr/app
 
 > COPY package.json .
+
 > RUN npm install
+
 > COPY . .
+
 > EXPOSE 8005
+
 > CMD [ "npm", "start" ]
+
+
 
 ### Commands
 
